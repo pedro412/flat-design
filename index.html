@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+
+
+    <title>Flexbox Grid</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-family: 'lato', sans-serif;
+            color: #424242;
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            background-color: #edeff0;
+        }
+        
+        .main-container {
+            width: 80%;
+            position: relative;
+            max-width: 1260px;
+            margin: 0 auto;
+        }
+        
+        .title {
+            position: relative;
+            top: 60px;
+            font-size: 60px;
+            color: white;
+        }
+        
+        h1 {
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #f8f9fa;
+            background-color: #228ae6;
+            border: solid .5px;
+            border-color: rgba( 0, 0, 0, 0.2);
+            border-radius: 10px;
+            border-top-width: 0.5px;
+            border-bottom: solid 5px rgba( 0, 0, 0, 0.2);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 100%;
+            min-height: 60px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .card span {
+            font-weight: 600;
+        }
+        
+        .card:hover {
+            background-color: #329af0;
+            transition: 0.1s;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .ml-2 {
+            margin-left: 1rem;
+        }
+        
+        .text-primary {
+            color: #329af0;
+        }
+        
+        .navbar {
+            color: #fff;
+            height: 100%;
+        }
+        
+        .header {
+            height: 70px;
+            background-color: #3e474f;
+        }
+        
+        .header-nav {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 100%;
+        }
+        
+        .header-nav-list {
+            list-style: none;
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .header-nav-item {
+            float: left;
+            margin-right: 30px;
+            transition: opacity 600ms 0s ease;
+            line-height: 70px;
+            font-weight: 700;
+        }
+        
+        .nav-item-link {
+            display: block;
+            color: #b2bbbd;
+            text-decoration: none;
+            transition: color 300ms 0s ease;
+        }
+        
+        .nav-item-link:hover {
+            color: #fff;
+        }
+        
+        .nav-item-link.disabled {
+            color: #b2bbbd;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar header-nav main-container text-right">
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a class="nav-item-link" href="">Home</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="nav-item-link" href="">Link</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="nav-item-link" href="">Link 2</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="nav-item-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <div class="main-container">
+        <h1 class="text-center text-primary">¿Cómo utilizar flexbox grid?</h1>
+        <p>Flexbox grid, es un framework muy ligero de apeas 1.3kb, utilizado para el posicionamiento de los contenedores. Supong que es el que usa Bootstrap para crear su sistema de rejillas o grid como se conoce comunmente.</p>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-xs">
+                <div class="card">
+                    <span>Link 1</span> <i class="fas fa-external-link-alt ml-2"></i>
+                </div>
+            </div>
+            <div class="col-xs">
+                <div class="card">
+                    <span>Link 2</span> <i class="fas fa-external-link-alt ml-2"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
